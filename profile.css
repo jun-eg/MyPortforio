@@ -1,0 +1,34 @@
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+/* 横向きカードのスタイル */
+.horizontalCard {
+  display: flex; /* 横並びを実現 */
+  flex-direction: row; /* 子要素を横に配置 */
+  align-items: center; /* 子要素を縦方向に中央揃え */
+  border: 1px solid #ddd; /* カード全体の境界線 */
+  border-radius: 8px; /* 角を丸くする */
+  overflow: hidden; /* コンテンツがはみ出ないようにする */
+  max-width: 600px; /* カードの最大幅を指定 */
+  margin: auto; /* 中央揃え */
+}
+
+/* 画像部分のスタイル */
+.horizontalCard img,
+.horizontalCard svg {
+  flex-shrink: 0; /* 画像が縮小されないように設定 */
+  width: 180px; /* 固定幅 */
+  height: 180px;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+/* テキスト部分のスタイル */
+.horizontalCard .card-body {
+  flex: 1; /* 残りのスペースを占有 */
+  padding: 1rem; /* テキスト部分の余白 */
+}
